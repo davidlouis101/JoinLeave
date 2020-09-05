@@ -13,19 +13,19 @@ class Main extends PluginBase implements Listener
 {
     public function onEnable()
     {
-        $this->getlogger()->info("JoinLeave by GeistFan and GodWeedZao");
+        $this->getlogger()->info("JoinLeave by Crow Balde");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     public function onPlayerJoin(PlayerJoinEvent $event)
     {
         $player = $event->getPlayer();
-        $event->setJoinMessage("");
+        $event->setJoinMessage("§9§lLamaflow§7»»§6 Der §7 " . $player . " §6hat denn Server Betreten");
     }
 
     public function onPlayerQuit(PlayerQuitEvent $event)
     {
         $player = $event->getPlayer();
-        $event->setQuitMessage("");
+        $event->setQuitMessage("§9§lLamaflow§7»»§6 Der §7" . $player . " §6hat denn Server Verlassen");
     }
 
 }
